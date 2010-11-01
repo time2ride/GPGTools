@@ -2423,7 +2423,7 @@ $HOME/Library/Mail/Bundles/</string>
 						<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
 						<array/>
 						<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-						<integer>2</integer>
+						<integer>0</integer>
 						<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
 						<true/>
 						<key>IC_REQUIREMENT_SCRIPT_PATH</key>
