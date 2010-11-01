@@ -1,0 +1,10 @@
+This file contains the versions of the programms used in the installer.
+
+libgpgerror="libgpg-error-1.10"
+libgcrypt="libgcrypt-1.4.6"
+libksba="libksba-1.1.0"
+pth="pth-2.0.7"
+libassuan2="libassuan-2.0.1"
+pinentry="pinentry-0.8.0"
+gnupg2="gnupg-2.0.16"
+gnupg1="gnupg-1.4.11"
