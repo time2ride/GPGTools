@@ -1,0 +1,21 @@
+#!/bin/bash
+
+PREFIX=/usr/local # Installprefix of GPG
+STANDARD_SOCKET=~/.gnupg/S.gpg-agent # Default socket
+PINENTRY_PATH=/usr/local/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac # Location of pinentry
+
+if ! $PREFIX/bin/gpg-agent &>/dev/null ;then # Is gpg-agent running?
+	[ -f "$HOME/.gpg-agent-info" ] && source "$HOME/.gpg-agent-info" && export GPG_AGENT_INFO # Check for env-flie..
+	if ! $PREFIX/bin/gpg-agent &>/dev/null ;then # Is gpg-agent running?
+		rm -f $STANDARD_SOCKET # Remove old socket
+		eval $($PREFIX/bin/gpg-agent --pinentry-program "$PINENTRY_PATH" --daemon --write-env-file) # Start gpg-agent.
+		
+		launchctl setenv GPG_AGENT_INFO "$GPG_AGENT_INFO"
+		
+		if [ ! -e $STANDARD_SOCKET ] ; then
+			sockPath=${GPG_AGENT_INFO%%\:*}
+			ln -s "$sockPath" $STANDARD_SOCKET # Link socket to default location.
+		fi
+	fi
+fi
+
