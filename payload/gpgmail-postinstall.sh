@@ -1,5 +1,5 @@
 #!/bin/sh
-tempdir=/private/tmp/GPGTools_Installation
+tempdir=/private/tmp/GPGMail_Installation
 
 mkdir -p "$HOME/Library/Mail/Bundles"
 # The installer has to make sure, that the "GPGMail.mailbundle" is installed in $tempdir

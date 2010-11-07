@@ -1307,13 +1307,13 @@
 													<key>CHILDREN</key>
 													<array/>
 													<key>GID</key>
-													<integer>80</integer>
+													<integer>20</integer>
 													<key>PATH</key>
 													<string>payload/gpgmail/GPGMail.mailbundle</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
-													<integer>493</integer>
+													<integer>509</integer>
 													<key>TYPE</key>
 													<integer>3</integer>
 													<key>UID</key>
@@ -1323,7 +1323,7 @@
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>GPGTools_Installation</string>
+											<string>GPGMail_Installation</string>
 											<key>PATH_TYPE</key>
 											<integer>0</integer>
 											<key>PERMISSIONS</key>
@@ -3328,14 +3328,14 @@
 				<key>BACKGROUND_PATH</key>
 				<dict>
 					<key>PATH</key>
-					<string>mac-gpg-logo.png</string>
+					<string>installer_background.png</string>
 					<key>PATH_TYPE</key>
 					<integer>1</integer>
 				</dict>
 				<key>CUSTOM</key>
 				<integer>1</integer>
 				<key>SCALING</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>INSTALLATION TYPE</key>
 			<dict>
